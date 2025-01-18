@@ -2,6 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+    id("com.google.dagger.hilt.android")
+    id("com.google.devtools.ksp")
+
 }
 
 android {
@@ -63,6 +66,12 @@ dependencies {
     implementation(libs.androidx.camera.video)
     implementation(libs.androidx.camera.mlkit.vision)
     implementation(libs.androidx.camera.effects)
+
+    // Coroutines
+    implementation(libs.coroutines.android)
+
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.android.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

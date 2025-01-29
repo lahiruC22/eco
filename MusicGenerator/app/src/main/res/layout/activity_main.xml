@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/backgroud"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music Title"
+        android:textSize="26sp"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:layout_height="250dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/icon" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:progressTint="#E909DA"
+        android:thumbTint="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/skip_previous_24dp_ea33f7_fill0_wght400_grad0_opsz24"
+            android:background="@drawable/btn_bg"
+            android:importantForAccessibility="no"
+            android:contentDescription="Skip previous" />
+
+        <ImageButton
+            android:id="@+id/play_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play_arrow_24dp_ea33f7_fill0_wght400_grad0_opsz24"
+            android:layout_marginHorizontal="12dp"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="Play button" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/skip_next_24dp_ea33f7_fill0_wght400_grad0_opsz24"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="Skip next" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginVertical="12dp">
+
+        <!-- Volume Down Button -->
+        <ImageButton
+            android:id="@+id/volume_down_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/volumedown"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="Volume down" />
+
+        <!-- Volume SeekBar -->
+        <SeekBar
+            android:id="@+id/volume_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="#E909DA"
+            android:thumbTint="#FFFFFF" />
+
+        <!-- Volume Up Button -->
+        <ImageButton
+            android:id="@+id/volume_up_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/volumeup"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="Volume up" />
+
+    </LinearLayout>
+
+</LinearLayout>

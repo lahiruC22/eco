@@ -1,5 +1,6 @@
 package com.hci.eco
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.MaterialTheme
@@ -21,6 +22,8 @@ import com.exyte.animatednavbar.items.dropletbutton.DropletButton
 fun ButtonRow(
     viewModel: CameraPreviewViewModel,
     navController: NavController,
+    modifier: Modifier = Modifier.background(Color.Transparent)
+    //modifier: Modifier,
 ) {
     var selectedIndex by remember { mutableIntStateOf(1) }
     //val context = LocalContext.current
@@ -37,7 +40,7 @@ fun ButtonRow(
             isSelected = selectedIndex == 0,
             onClick = {
                 selectedIndex = 0
-                viewModel.onGalleryButtonClick()
+                navController.navigate(Routes.GALLERY_SCREEN)
             },
             icon = R.drawable.music,
             contentDescription = "Music",

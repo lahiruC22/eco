@@ -1,5 +1,5 @@
 [versions]
-agp = "8.8.0"
+agp = "8.8.1"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -17,7 +17,8 @@ navigationCompose = "2.8.5"
 composeMaterial = "1.4.0"
 roomCommon = "2.6.1"
 roomKtx = "2.6.1"
-androidAnimatedNavigationBar = "1.0.0"
+room = "2.6.1"
+coil = "3.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -45,7 +46,9 @@ androidx-navigation-compose = { group = "androidx.navigation", name = "navigatio
 androidx-compose-material = { group = "androidx.wear.compose", name = "compose-material", version.ref = "composeMaterial" }
 androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
-animated-navigation-bar = { module = "com.exyte:animated-navigation-bar", version.ref = "androidAnimatedNavigationBar" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

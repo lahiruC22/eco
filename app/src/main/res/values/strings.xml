@@ -1,11 +1,23 @@
 <resources>
     <string name="app_name">Eco</string>
-    <string name="action_go">Go</string>
-    <string name="lyrics_generator">Eco Lyrics Generator</string>
+    <string name="action_go">Write Lyrics</string>
+    <string name="lyrics_generator">Lyrics Generator</string>
     <string name="label_prompt">Prompt</string>
-    <string name="prompt_placeholder">Provide a recipe for the baked goods in the image</string>
+    <string name="prompt_placeholder">
+        Imagine you are a songwriter looking at this image. It sparks a strong feeling and a story in your mind.
+        Write full song lyrics inspired by this image.  Aim for a complete song structure, including verses, a chorus, and potentially a bridge, if appropriate.
+        As you write, think like a songwriter capturing inspiration from a scene:
+        Identify the dominant emotion or feeling conveyed by the image. Is it about love, memories, time passing, commitment, celebration, or something else?
+        Extract visual details and elements from the image. Think about the setting, objects, text, and overall composition. Use these visual elements as imagery and metaphors in your lyrics.
+        Develop a narrative or story suggested by the image. Who are the people involved (if any are implied)? What is the occasion or context? What story can you tell through song lyrics?
+        Structure your lyrics into a song format. Aim for: At least two verses to develop the story or theme.
+        A recurring chorus that captures the central emotion or message. Optionally, a bridge to provide a change in perspective or emotion, or to build towards a conclusion.
+        An outro or final lines to bring the song to a close. Let the image guide your songwriting process.  Create lyrics for a full song that evokes the mood and tells a story inspired by what you see.
+    </string>
     <string name="image1_description">Cupcake</string>
     <string name="image2_description">Cookies</string>
     <string name="image3_description">Cake</string>
+    <string name="image_description">Image %1$d</string>
     <string name="results_placeholder">(Results will appear here)</string>
+    <string name="gallery_screen">Memories</string>
 </resources>
